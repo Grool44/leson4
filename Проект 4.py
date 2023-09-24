@@ -1,7 +1,6 @@
 class Dog:
     def __init__(self, name: str, age: int, breed: str):
         '''
-
         :param name: кличка собаки
         :param age: возраст собаки
         '''
@@ -35,4 +34,4 @@ my_dog.jump()
 
 my_dog2 = Dog('Череп', 9, 'Дворняга')
 print(my_dog2.name)
-my_dog2.sit()
+my_dog2.sit()0
