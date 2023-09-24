@@ -14,6 +14,17 @@ class Dog:
         print(f'{self.name.title()} сел')
     def jump(self):
         '''Команда 'прыжок' '''
+        jump_heights = {
+            'Дворняга':0.5,
+            'Шпиц':999999999999999999999999999999,
+            'Немецкая овчарка': 0.0000000001
+        }
+        if self.breed in jump_heights:
+            height = jump_heights[self.breed]
+            print(f'{self.name.title()} прыгнул на {height} метров')
+        else:
+            print(f'{self.name.title()} сделал прыжок')
+
         print(f'{self.name.title()} прыгнул')
     def bark(self):
         '''Команда 'голос' '''
